@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Poppins:wght@500;600;700;800&family=Rufina:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading: rgb(0, 10, 45);
+  --para: #777777;
+  --para-tint: #e4e4e4;
+  --third: #fff;
+  --helper: #8490ff;
+  --helper-tint: #f3f4ff;
+  --bg: rgb(249, 249, 255);
+  --gradient: linear-gradient(0deg, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
+  --shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.2);
+}
+
+/* spacing 
+desktop = 4.8rem */
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rufina", serif;
+}
+
+h1 {
+  color: var(--heading);
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--para);
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  background: linear-gradient(0deg, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
+  padding: 1.6rem 3.2rem;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: var(--shadow);
+  color: #fff;
+}
+
+.section {
+  padding: 9rem 0;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+
+.grid-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ===========================================
+Header Section Start
+======================================= */
+
+.header {
+  padding: 0 4.8rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+}
+
+.header .logo {
+  height: 3rem;
+}
+
+.navbar-lists {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:  --para;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--heading);
+}
+
+/* ===========================================
+Hero Section Start
+======================================= */
+
+.hero {
+  background: var(--gradient);
+  padding: 8rem 4.8rem;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 70rem;
+}
+
+.hero-heading {
+  color: var(--third);
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.hero-para {
+  color: var(--third);
+  font-size: 2rem;
+  margin-top: 2.4rem;
+}
+
+.hero-btn {
+  margin-top: 3.2rem;
+}
+
+/* ===========================================
+Features Section Start
+======================================= */
+
+.features {
+  background: var(--helper-tint);
+  padding: 8rem 0;
+}
+
+.features-heading {
+  color: var(--heading);
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+
+.features-list {
+  margin-top: 4.8rem;
+}
+
+.features-item {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.features-icon {
+  height: 6rem;
+}
+
+.features-title {
+  color: var(--heading);
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.features-para {
+  color: var(--para);
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* ===========================================
+Call to Action Section Start
+======================================= */
+
+.cta {
+  background: var(--bg);
+  padding: 8rem 4.8rem;
+  text-align: center;
+}
+
+.cta-heading {
+  color: var(--heading);
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+
+.cta-para {
+  color: var(--para);
+  font-size: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.cta-btn {
+  margin-top: 3.2rem;
+}
+
+/* ===========================================
+Footer Section Start
+======================================= */
+
+.footer {
+  background: var(--heading);
+  padding: 8rem 4.8rem;
+  text-align: center;
+}
+
+.footer-logo {
+  height: 3rem;
+}
+
+.footer-links {
+  margin-top: 4.8rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--third);
+  margin: 0 1.2rem;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--third);
+  opacity: 0.8;
+}
+
+.footer-social {
+  margin-top: 4.8rem;
+}
+
+.footer-icon {
+  height: 3rem;
+  margin: 0 1.2rem;
+}
+
+/* ===========================================
+Responsive CSS
+======================================= */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .section {
+    padding: 6rem 0;
+  }
+
+  .grid {
+    gap: 4.8rem;
+  }
+
+  .hero {
+    padding: 6rem 4.8rem;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
